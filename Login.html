@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example</title>
+    <style>
+      .auth-box {
+        width: 400px;
+        height: 450px;
+        background-color: aquamarine;
+        position: absolute;
+        left: 550px;
+        top: 125px;
+      }
+      .header {
+        width: 400px;
+        height: 80px;
+        background-color: aqua;
+        display: flex;
+      }
+      button{
+        width: 200px;
+        background-color: transparent;
+        border: none;
+      }
+      #txtcontent1 {
+        width: 400px;
+        height: 370px;
+        background-color: red;
+        position: absolute;
+      }
+      #txtcontent2 {
+        width: 400px;
+        height: 370px;
+        background-color: blueviolet;
+        position: absolute;
+      }
+      label {
+        position: relative;
+        top: 80px;
+        left: 15px;
+        font-size: 20px;
+        font-family: sans-serif;
+      }
+      input {
+        border: none;
+        width: 200px;
+        height: 20px;
+        position: relative;
+        top: 80px;
+        left: 20px;
+        outline: none;
+      }
+      .loginbtn {
+        width: 100px;
+        height: 20px;
+        background-color: rgb(21, 140, 245);
+        position: relative;
+        top: 120px;
+        left: 150px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="auth-box">
+      <div class="header">
+        <button id="sbtn" type="button" style="border-right: 5px solid black">Signup</button>
+        <button id="lbtn" type="button">Login</button>
+      </div>
+
+      <div id="txtcontent1" style="display: none" name="registerPage"></div>
+      <!-- ----------------LOGIN In Form --------------- -->
+      <div id="txtcontent2">
+        <form action="" method="post">
+          <label> User name : </label><input type="text" /><br /><br />
+          <label style="position: relative; left: 25px"> Password : </label
+          ><input
+            style="position: relative; left: 30px"
+            type="text"
+          /><br /><br />
+
+          <button type="submit" class="loginbtn">Login</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      let var1 = document.getElementById("txtcontent1");
+      let var2 = document.getElementById("txtcontent2");
+
+      document.getElementById("sbtn").onclick = function () {
+        var2.style.display = "none";
+        var1.style.display = "";
+      };
+      document.getElementById("lbtn").onclick = function () {
+        var1.style.display = "none";
+        var2.style.display = "";
+      };
+    </script>
+  </body>
+</html>

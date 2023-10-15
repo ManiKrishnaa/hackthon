@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./hover.css">
+    <title>Informer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">/
+        <div class="headerBanner">
+            <div class="logoimg"><img src="./logo.png" width="100px" height="100px"></div>
+            <div class="navBar">
+                <ul>
+                    <li>Home</li>
+                    <li>Vision</li>
+                    <li>Contact Us</li>
+                    <li><a href="orphan.php">login/signup</a></li>
+                </ul>
+            </div>
+        </div>
+        <center>
+            <div class="centercontainer">
+                <div class="backImg">
+                    <div class="back">
+            
+                    </div>
+                </div>
+                <br><br><br>
+                <!--~~~~~~Category's Section~~~~~~ -->
+                <div class="category">
+                    <div class="category1 cat">
+                        <img src="food.png" alt="">
+                        <a href="#"><p class="txtdonate">Donate </p ></a>
+                    </div>
+                    <div class="category2 cat">
+                        <img src="clothes.png" alt="">
+                        <a href="#"><p class="txtdonate">Donate </p ></a>
+                    </div>
+                    <div class="category3 cat">
+                        <img src="groceries.png" alt="">
+                        <a href="#"><p class="txtdonate">Donate </p></a>
+                    </div>
+                    <div class="category43 cat">
+                        <img src="others.png" alt="">
+                        <a href="#"><p class="txtdonate">Donate </p></a>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <footer>
+            <div class="footersection">
+                <div class="tetsection">
+
+                </div>
+                <div class="footerimg">
+                    <img src="bottom.png"  class="bottomimg">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let i = 1;
+        let img = document.querySelector(".back");
+        let colors = ["slide1.png","slide2.png","slide3.png"];
+        img.style.backgroundImage = "url('"+colors[0]+"')";
+        img.style.backgroundSize = "1100px 420px";
+        setInterval(() => {
+            if(i == 3){
+                i = 0;
+            }
+            img.style.backgroundImage = "url('"+colors[i]+"')";
+            img.style.backgroundSize = "1100px 420px";
+            console.log("Normal",i); 
+            i++; 
+        }, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+ /* _-_-_-_-Category Section's -_-_-_-_ */
+ .cat
+ {
+     cursor: pointer;
+     position: relative;
+     font-size: larger;
+     padding: 10px 10px;
+     background: transparent;
+     top:20px;
+     border-top-right-radius:10px;
+     border-bottom-left-radius:10px;
+     transition: all 1s;
+ }
+ .cat:after ,.cat:before{
+     content:" ";
+     width:10px;
+     height: 10px;
+     border: 0px solid transparent;
+     position: absolute;
+     transition: all 1s;
+ 
+ }
+ .cat:after{
+     top:-1px;
+     left:-1px;
+     border-top:5px solid #FFFF;
+     border-left:5px solid #FFFF;
+ }
+ .cat:before{
+     bottom:-1px;
+     right:-1px;
+     border-bottom:5px solid #FFFF;
+     border-right:5px solid #FFFF;
+ }
+ .cat:hover{
+     border-top-right-radius:0px;
+     border-bottom-left-radius:0px;
+ 
+ &:before, &:after{
+     width:100%;
+     height:100%;
+ }   
+ }
+ 
+ /* _-_-_-Second Efect-_-_-_-_ */
+ 
+ .cat {
+     width: 100%;
+     max-width: 250px;
+     height: 250px;
+     position: relative;
+     /* left: 350px; */
+ }
+ .cat img {
+     max-width: 100%
+ }
+ .cat a {
+     width: 100%;
+     max-width: 230px;
+     height: 0px;
+     left: 0;
+     bottom: 0px;
+     /* text-align:center; */
+     text-decoration: none;
+     position: absolute;
+     transition: 0.5s ease all;
+     visibility: hidden;
+     opacity: 0;
+     margin-left: 10px;
+     margin-bottom: 10px;
+ } 
+ .cat:hover a {
+     background-color: #3d1b9c;
+     visibility: visible;
+    /* height: 16%;*/
+     padding: 20% 0; 
+     opacity: 1;
+     
+ }
+ .cat:hover{
+     transform: scale(1.1);
+     transition: 2s;
+ }
+ .txtdonate{
+     text-align: center;
+     color: white;
+     margin-bottom: 50px;
+     font-size: 40px;
+     position: relative;
+     bottom: 20px;
+     font-family: sans-serif;
+ }

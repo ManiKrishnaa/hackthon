@@ -1,0 +1,91 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*----Header----*/
+.headerBanner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    /* background-color: rgba(25,122,177,1); */
+}
+.logoimg{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin-left: 20px;
+}
+.navBar ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+.navBar ul li{
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    border: 5px solid transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navBar ul li:hover{
+    border-bottom: 5px solid white;
+}
+
+
+/* -------Center Container------- */
+.centercontainer{
+    width: 1300px;
+    height: 1500px;
+    
+}
+
+/*Slider Changing Image */
+.back {
+    width:1100px;
+    height: 420px;
+    animation: change 3s  ease-in-out infinite;
+}
+.backImg{
+    /* padding-left: 40px; */
+    padding-top: 50px;
+}
+@keyframes change {
+    from{ transform: scale(1.1);}
+    to{ transform: scale(1.15);}
+}
+/* --~~~~~~Category's Section~~~~~~ */
+.category{
+    width: 1200px;
+    height: 400px;
+    /* background-color: rgb(82, 188, 221); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    /* background-color:tomato ; */
+}
+/* ~~~~~~~~~Lower Most ~~~~~~~~~~*/
+.footersection{
+    padding-bottom: 0px;
+}
+.tetsection{
+
+}
+.bottomimg{
+    width:100%;
+    position: relative;
+    bottom: 0px;
+}
